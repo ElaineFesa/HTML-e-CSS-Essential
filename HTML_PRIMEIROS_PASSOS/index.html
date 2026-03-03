@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head><!--Cabeçalho do documento, onde ficam as configurações.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Configuração para tornar a página responsiva, device-width:adapta-se a largura do dispositivo.-->
+    <title>Primeira Aula</title>
+    <meta charset="UTF-8">
+    <style>
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            /*Fonte do título principal*/
+            color: #2E8B57;
+            /*Cor do título principal*/
+            font-size: 35px;
+            /*Tamanho da fonte do título principal*/
+        }
+
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            /*Fonte do subtítulo*/
+            color: #3CB371;
+            /*Cor do subtítulo*/
+            font-size: 28px;
+            /*Tamanho da fonte do subtítulo*/
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            /*Fonte dos parágrafos*/
+            line-height: 1.6;
+            /*Espaçamento entre linhas dos parágrafos*/
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            /*Ocupa a linha inteira / / zera a contagem da margem e deixa os lados igualitarios auto*/
+            /*max-width: 100%; /*Garante que a imagem não ultrapasse a largura do contêiner*/
+            height: auto;
+            /*Mantém a proporção da imagem*/
+        }
+
+        header {
+            background: linear-gradient(to bottom, darkorange, darkorange, orange); /*começa de cima para baixo, com as cores especificadas*/
+            /*--Gradiente de cor para o cabeçalho*/
+            padding: 20px;
+            /*Espaçamento interno do cabeçalho*/
+            text-align: center;
+            /*Alinhamento do conteúdo do cabeçalho*/
+        }
+
+        footer {
+            background: linear-gradient(to top, darkorange, darkorange, orange);
+            font-family: Arial, Helvetica, sans-serif;
+            display: block;
+            /*Garante que o rodapé seja um elemento de bloco*/
+            text-align: center;
+            /*Alinhamento do texto no rodapé*/
+            color: darkgreen;
+        }
+
+        h6 {
+            text-align: right;
+            /*Alinhamento do texto do h6*/
+        }
+    </style>
+</head>
+
+<body>
+    <header> <!--Cabeçalho da página-->
+        <img src="img/topo.png" alt="Imagem PetShop">
+        <!--alt: texto alternativo para a imagem, caso ela não seja carregada.-->
+    </header>
+    <!--h2, h3, h4, h5, h6: títulos de níveis inferiores, usados para organizar o conteúdo(Pode repetir).-->
+    <h1>Título Principal</h1><!--Título principal da página(Não pode ser repetido).-->
+    <h2>Subtítulo</h2>
+    <h3>Terceiro Nível</h3>
+    <h4>Quarto Nível</h4>
+    <h5>Quinto Nível</h5>
+    <h6>Sexto Nível</h6>
+    <!--Identação: recuos de texto para facilitar a leitura do código.-->
+    <p>Na Pet Shop Delivery, selecionamos cada item pensando no conforto, na saúde e, claro, na diversão de quem te
+        recebe com alegria todos os dias.</p>
+    <p>Da <strong>ração super premium </strong> ao brinquedo que resiste até às mordidas mais animadas, entregamos amor
+        em forma de mimos na porta da sua casa.</p> <!--conteudo do corpo-->
+    <br>
+    <p>Curadoria Especializada: Só trabalhamos com marcas aprovadas por veterinários.</p>
+    <p>Entrega Relâmpago: Porque a fome (e a ansiedade pelo brinquedo novo) não espera!</p>
+    <p><i><strong>Atendimento Humanizado: Nossa equipe é formada por pais e mães de pet prontos para
+                ajudar.</strong></i></p>
+    <footer> <!--Rodapé do documento, onde ficam as informações finais.-->
+        <br>
+        <h3>Petshop - Tudo para seu Pet</h3>
+        <p>CNPJ: 12.345.678/0001-90</p>
+        <p><strong>whatsapp: (11) 91234-5678</strong></p>
+        <h6>&copy; 2026 Minha Primeira Página Web. Todos os direitos reservados.</h6>
+        <br>
+    </footer>
+</body>
+
+</html>
