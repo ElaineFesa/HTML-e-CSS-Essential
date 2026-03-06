@@ -1,0 +1,80 @@
+* {
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            /*Fonte do título principal*/
+            color: #2E8B57;
+            /*Cor do título principal*/
+            font-size: 35px;
+            /*Tamanho da fonte do título principal*/
+            text-align: left;
+        }
+
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            /*Fonte do subtítulo*/
+            color: #3CB371;
+            /*Cor do subtítulo*/
+            font-size: 28px;
+            /*Tamanho da fonte do subtítulo*/
+            text-align: left;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            /*Fonte dos parágrafos*/
+            line-height: 1.6;
+            /*Espaçamento entre linhas dos parágrafos*/
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            /*Ocupa a linha inteira / / zera a contagem da margem e deixa os lados igualitarios auto*/
+            /*max-width: 100%; /*Garante que a imagem não ultrapasse a largura do contêiner*/
+            height: auto;
+            /*Mantém a proporção da imagem*/
+        }
+
+        header {
+            background: linear-gradient(to bottom, darkorange, darkorange, orange);
+            /*começa de cima para baixo, com as cores especificadas*/
+            /*--Gradiente de cor para o cabeçalho*/
+            padding: 20px;
+            /*Espaçamento interno do cabeçalho*/
+            text-align: center;
+            /*Alinhamento do conteúdo do cabeçalho*/
+        }
+
+        footer {
+            background: linear-gradient(to top, darkorange, darkorange, orange);
+            font-family: Arial, Helvetica, sans-serif;
+            display: block;
+            /*Garante que o rodapé seja um elemento de bloco*/
+            text-align: center;
+            /*Alinhamento do texto no rodapé*/
+            color: darkgreen;
+        }
+
+        h6 {
+            text-align: right;
+            /*Alinhamento do texto do h6*/
+            padding-right: 2%;
+        }
+
+        div {
+            background-color: white;
+            display: block;
+            margin: 0 auto;
+            text-align: justify;
+            width: 85%;
+            border-radius: 40px;
+            padding: 2%;
+        }
+        body {
+            background-color: whitesmoke;
+        }
