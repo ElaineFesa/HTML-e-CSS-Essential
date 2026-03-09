@@ -7,6 +7,9 @@
     <title>Primeira Aula</title>
     <meta charset="UTF-8">
     <link href="css/stylo.css" rel="stylesheet">
+    <script>
+        let nomeUsuario = prompt("Gostaria de digitar seu nome? Caso não, basta fechar este aviso. ");
+    </script>
 </head>
 
 <body>
@@ -17,6 +20,12 @@
     </header>
     <br>
     <div>
+        <hr>
+        <script>
+            document.write("<h2>Bem-vindo, " + (nomeUsuario ? nomeUsuario : "Visitante") + "!</h2>");
+        </script>
+        <hr><br>
+        <!-- hr: linha horizontal para separar seções do conteúdo. -->
         <!-- h2, h3, h4, h5, h6: títulos de níveis inferiores, usados para organizar o conteúdo (podem ser repetidos). -->
         <h1>Título Principal</h1><!-- Título principal da página (não pode ser repetido). -->
 
