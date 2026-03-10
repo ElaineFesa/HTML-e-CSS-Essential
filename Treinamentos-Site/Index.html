@@ -6,11 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo-aula.ico" type="image/x-icon">
     <style>
+        /*Configurações globais, aplicadas a todos os elementos da página. */
+        :root {
+            --preto: rgb(0, 0, 0);
+            --branco: rgb(255, 255, 255);
+            --cinza: rgb(235, 235, 235);
+        }
+        * {
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+
         header {
-            background-color: black;
-            color: white;
+            background-color: var(--preto);
+            color: var(--branco);
             text-align: center;
             padding: 1%;
+        }
+        body {
+            background-color: var(--cinza);
+        }
+        main {
+            background-color: var(--branco);
+            padding: 1%;
+            margin: auto;
+            width: 90%;
+            margin-top: 1%;
+            border-radius: 15px;
+            box-shadow: 1px 1px 5px; /*sombra na direção direita e baixo, com um desfoque de 10px. */
+        }
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em; /* Mais ou menos 16px */
+        }
+        /*Configurações de titulos*/
+        h1 {
+            font-size: 2em; /* Mais ou menos 32px */
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
+        h4 {
+            font-size: 1em;
+        }
+        h1,h2,h3,h4,h5,h6 {
+            padding-top: 0.5%;padding-bottom: 0.5%;
+        }
+        /*configurações de imagens*/
+        img {
+            width: 100%;
+            margin-top: 1%;
+            border-radius: 15px;
         }
     </style>
     <title>TecTreinamentos Informática</title>
@@ -23,10 +73,33 @@
     </header>
     <nav></nav> <!-- Barra de navegação, onde ficam os links para as outras páginas do site. -->
     <main>
-        <article></article><!-- Artigo ou seção principal do conteúdo, onde ficam as informações mais importantes. -->
-        <section></section><!-- Seção ou parte do conteúdo, usada para organizar as informações de forma clara e hierárquica. -->
+        <article>
+            <h1>Desenvolvimento Front End: Curso Completo e Essencial</h1>
+            <br>
+            <h2>Aprenda com especialista e torne-se um(a) desenvolvedor(a) Front-End!</h2>
+
+            <p> Você já imaginou criar sites que impressionam tanto pelo visual quanto pela performance?</p>
+            <p> O front-end é a
+            peça-chave por trás das interfaces que vemos e interagimos na web. Se você quer dominar essa área e
+            conquistar oportunidades no mercado de tecnologia, nosso curso de Front-End é o caminho ideal!</p>
+
+            <p> Neste curso, você aprenderá tudo que precisa para se tornar um desenvolvedor front-end completo, capaz de
+            criar experiências incríveis para os usuários. </p>
+            <p>Não importa se você é iniciante ou já tem algum conhecimento,
+            o conteúdo foi planejado para levar você do básico ao avançado, garantindo o domínio das principais
+            ferramentas e tecnologias.</p>
+
+            <picture>
+                <source media="(max-width: 800px)" srcset="img/imagem2.png" alt="Analista de Sistemas">
+                <!-- A tag <picture> é usada para fornecer diferentes fontes de imagem com base nas condições de exibição, como a largura da tela. -->
+                <img src="img/imagem1.png" alt="Analista de Sistemas">
+            </picture>
+        </article><!-- Artigo ou seção principal do conteúdo, onde ficam as informações mais importantes. -->
+        <section></section>
+        <!-- Seção ou parte do conteúdo, usada para organizar as informações de forma clara e hierárquica. -->
     </main> <!-- Conteúdo principal da página, onde ficam as informações mais importantes. -->
-    <aside></aside><!-- Barra lateral, onde ficam informações complementares, como links relacionados, anúncios, etc. -->
+    <aside></aside>
+    <!-- Barra lateral, onde ficam informações complementares, como links relacionados, anúncios, etc. -->
     <footer></footer> <!-- Rodapé da página, onde ficam as informações de contato, direitos autorais, etc. -->
 </body>
 
