@@ -1,106 +1,187 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/logo-aula.ico" type="image/x-icon">
-    <style>
-        /*Configurações globais, aplicadas a todos os elementos da página. */
-        :root {
-            --preto: rgb(0, 0, 0);
-            --branco: rgb(255, 255, 255);
-            --cinza: rgb(235, 235, 235);
-        }
-        * {
-            margin: 0;
-            border: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: var(--preto);
-            color: var(--branco);
-            text-align: center;
-            padding: 1%;
-        }
-        body {
-            background-color: var(--cinza);
-        }
-        main {
-            background-color: var(--branco);
-            padding: 1%;
-            margin: auto;
-            width: 90%;
-            margin-top: 1%;
-            border-radius: 15px;
-            box-shadow: 1px 1px 5px; /*sombra na direção direita e baixo, com um desfoque de 10px. */
-        }
-        html {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 1em; /* Mais ou menos 16px */
-        }
-        /*Configurações de titulos*/
-        h1 {
-            font-size: 2em; /* Mais ou menos 32px */
-        }
-        h2 {
-            font-size: 1.5em;
-        }
-        h3 {
-            font-size: 1.5em;
-        }
-        h4 {
-            font-size: 1em;
-        }
-        h1,h2,h3,h4,h5,h6 {
-            padding-top: 0.5%;padding-bottom: 0.5%;
-        }
-        /*configurações de imagens*/
-        img {
-            width: 100%;
-            margin-top: 1%;
-            border-radius: 15px;
-        }
-    </style>
-    <title>TecTreinamentos Informática</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="img/logo-aula.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/estilo.css" />
+  <title>TecTreinamentos Informática</title>
 </head>
 
 <body>
-    <header>
-        <h3>Tectreinamentos Informática</h3>
-        <h4>Desenvolvimento Front</h4>
-    </header>
-    <nav></nav> <!-- Barra de navegação, onde ficam os links para as outras páginas do site. -->
-    <main>
-        <article>
-            <h1>Desenvolvimento Front End: Curso Completo e Essencial</h1>
-            <br>
-            <h2>Aprenda com especialista e torne-se um(a) desenvolvedor(a) Front-End!</h2>
+  <header>
+    <h3>Tectreinamentos Informática</h3>
+    <h4>Desenvolvimento Front</h4>
+    <!-- Barra de navegação, onde ficam os links para as outras páginas do site. -->
+    <nav>
+      <ul>
+        <a href="Index.html">Home</a>
+        <a href="Sobre.html">Sobre</a>
+        <a href="Cursos.html">Cursos</a>
+      </ul>
+    </nav>
+  </header>
 
-            <p> Você já imaginou criar sites que impressionam tanto pelo visual quanto pela performance?</p>
-            <p> O front-end é a
-            peça-chave por trás das interfaces que vemos e interagimos na web. Se você quer dominar essa área e
-            conquistar oportunidades no mercado de tecnologia, nosso curso de Front-End é o caminho ideal!</p>
 
-            <p> Neste curso, você aprenderá tudo que precisa para se tornar um desenvolvedor front-end completo, capaz de
-            criar experiências incríveis para os usuários. </p>
-            <p>Não importa se você é iniciante ou já tem algum conhecimento,
-            o conteúdo foi planejado para levar você do básico ao avançado, garantindo o domínio das principais
-            ferramentas e tecnologias.</p>
+  <br>
+  <!--A classe eh usada quando temos a necessidade de usar uma separacao nbo site-->
+  <div class="separador"></div>
+  <br>
+  <main>
+    <article>
+      <h1><strong>Desenvolvimento Front End:</strong> Curso Completo e Essencial</h1>
+      <br />
+      <h2>
+        Aprenda com especialista e torne-se um(a) desenvolvedor(a) Front-End!
+      </h2>
 
-            <picture>
-                <source media="(max-width: 800px)" srcset="img/imagem2.png" alt="Analista de Sistemas">
-                <!-- A tag <picture> é usada para fornecer diferentes fontes de imagem com base nas condições de exibição, como a largura da tela. -->
-                <img src="img/imagem1.png" alt="Analista de Sistemas">
-            </picture>
-        </article><!-- Artigo ou seção principal do conteúdo, onde ficam as informações mais importantes. -->
-        <section></section>
-        <!-- Seção ou parte do conteúdo, usada para organizar as informações de forma clara e hierárquica. -->
-    </main> <!-- Conteúdo principal da página, onde ficam as informações mais importantes. -->
-    <aside></aside>
-    <!-- Barra lateral, onde ficam informações complementares, como links relacionados, anúncios, etc. -->
-    <footer></footer> <!-- Rodapé da página, onde ficam as informações de contato, direitos autorais, etc. -->
+      <p>
+        Você já imaginou criar sites que impressionam tanto pelo visual quanto
+        pela performance?
+      </p>
+      <p>
+        O front-end é a peça-chave por trás das interfaces que vemos e
+        interagimos na web. Se você quer dominar essa área e conquistar
+        oportunidades no mercado de tecnologia, nosso curso de Front-End é o
+        caminho ideal!
+      </p>
+
+      <p>
+        Neste curso, você aprenderá tudo que precisa para se tornar um
+        desenvolvedor front-end completo, capaz de criar experiências
+        incríveis para os usuários.
+      </p>
+      <p>
+        Não importa se você é iniciante ou já tem algum conhecimento, o
+        conteúdo foi planejado para levar você do básico ao avançado,
+        garantindo o domínio das principais ferramentas e tecnologias.
+      </p>
+
+      <picture>
+        <source media="(max-width: 800px)" srcset="img/imagem2.png" alt="Analista de Sistemas" />
+        <!-- A tag <picture> é usada para fornecer diferentes fontes de imagem com base nas condições de exibição, como a largura da tela. -->
+        <img src="img/imagem1.png" alt="Analista de Sistemas" />
+      </picture>
+      <button>Saiba mais</button>
+      <br />
+      <p>
+      <h2>O que você vai aprender?</h2> HTML5 e CSS3: Domine a estrutura e o estilo
+      das páginas web.
+      <br></p>
+      <p>
+        JavaScript: Torne seus sites dinâmicos e interativos com uma das
+        linguagens mais populares do mundo.
+        <br>
+      </p>
+      <p>
+        Design Responsivo: Crie sites que se adaptam a qualquer tela, seja
+        mobile, tablet ou desktop.
+        <br>
+      </p>
+      <p>
+        Otimização de Desempenho: Técnicas para garantir que suas páginas
+        sejam carregadas rapidamente e proporcionem uma experiência fluida.
+        <br>
+      </p>
+      <p>
+      <h2>Por que esse curso é ideal para você?</h2> Metodologia Prática: Você
+      aprenderá codificando, com exercícios reais e testes que vão
+      solidificar seu conhecimento.
+      <br></p>
+      <p>
+        Projetos Reais: Desenvolva projetos completos para montar um portfólio
+        profissional e atrair a atenção de recrutadores.
+        <br>
+      </p>
+      <p>
+        Acesso Vitalício: Aprenda no seu ritmo e tenha acesso ao conteúdo
+        sempre que precisar.
+        <br>
+      </p>
+      <p>
+        Suporte Exclusivo: Tire suas dúvidas diretamente com especialistas que
+        atuam no mercado e estão prontos para ajudá-lo no futuro.
+        <br>
+      </p>
+      <p>
+        <strong>Certificação Reconhecida:</strong> Ao concluir o curso, você recebe um
+        certificado que comprova seu conhecimento e pode ser um diferencial
+        no seu currículo.
+        <br>
+      </p>
+      <p>
+      <h2>Para quem é este curso?</h2> Iniciantes: Não tem experiência com
+      programação? Sem problemas! Nosso curso foi pensado para introduzir
+      você aos conceitos fundamentais, com uma curva de aprendizado suave
+      e prática.
+      <br></p>
+      <p>
+        Desenvolvedores em Transição de Carreira: Se você já tem experiência
+        em outras áreas da tecnologia, mas quer migrar para o front-end,
+        este curso vai acelerar seu processo de transição.
+        <br>
+      </p>
+      <p>
+        Profissionais de Design: Se você é designer e deseja levar suas
+        habilidades para o próximo nível, criando sites completos e
+        funcionais, este curso será uma ótima adição ao seu repertório.
+        <br>
+      </p>
+      <p>
+        Vantagens de Aprender Front-End Hoje: A demanda por desenvolvedores
+        front-end não para de crescer, já que a presença digital das empresas
+        é cada vez mais essencial. Sites bem construídos e funcionais são
+        uma necessidade, e profissionais que dominam as técnicas de
+        front-end estão sendo disputados no mercado.
+        <br>
+      </p>
+      <p>
+        <strong>Altos Salários:</strong> As empresas pagam bem por quem sabe criar sites
+        modernos e eficientes.
+        <br>
+      </p>
+      <p>
+        <strong>Flexibilidade:</strong> Trabalhe em empresas renomadas ou atue como
+        freelancer, criando sua própria carteira de clientes.
+        <br>
+      </p>
+      <p>
+        Tecnologia em Constante Evolução: O front-end evolui rapidamente, e
+        aprender essas habilidades agora vai garantir que você esteja
+        preparado para o futuro.
+      </p>
+    </article>
+
+    <!-- Seção ou parte do conteúdo, usada para organizar as informações de forma clara e hierárquica. -->
+  </main>
+  <div class="separador-conteudo"></div>
+  <!-- Conteúdo principal da página, onde ficam as informações mais importantes. -->
+  <aside>
+    <!-- Artigo ou seção principal do conteúdo, onde ficam as informações mais importantes. -->
+    <section id="grid-conteudo">
+      <div class="grid">
+        <div>Conteudo 1</div>
+        <div>Conteudo 2</div>
+        <div>Conteudo 3</div>
+        <div>Conteudo 4</div>
+        <div>Conteudo 5</div>
+        <div>Conteudo 6</div>
+      </div>
+
+    </section>
+  </aside>
+  <div class="separador-conteudo"></div>
+  <!-- Barra lateral, onde ficam informações complementares, como links relacionados, anúncios, etc. -->
+  <footer>
+    <h3>Tectreinamentos Informática</h3>
+    <h4>Desenvolvimento Front</h4>
+    <br>
+    <p>Contato: contato@tectreinamentos.com</p>
+    <p>Telefone: (11) 1234-5678</p>
+    <p>Endereço: Av Paulista, 123 - São Paulo, SP</p>
+  </footer>
+  <!-- Rodapé da página, onde ficam as informações de contato, direitos autorais, etc. -->
 </body>
 
 </html>
