@@ -1,0 +1,305 @@
+/*Configurações globais, aplicadas a todos os elementos da página. */
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Parisienne&display=swap');
+
+:root {
+    --preto: rgb(0, 0, 0);
+    --branco: rgb(255, 255, 255);
+    --cinza: rgb(235, 235, 235);
+    --verde: rgb(0, 128, 0);
+    --verde2: rgb(0, 255, 0);
+    --yellow: rgb(255, 255, 0);
+    --violt: rgb(238, 130, 238);
+    --orchd: rgb(218, 112, 214);
+    --viodk: rgb(148, 0, 211);
+    --indig: rgb(75, 0, 130);
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--violt);
+    color: var(--branco);
+    padding: 1%;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+nav {
+    color: var(--branco);
+    display: grid;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.3em;
+    word-spacing: 8px;
+}
+
+a:hover {
+    background-color: var(--violt);
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 1.2em;
+}
+
+body {
+    background-color: var(--branco);
+}
+
+main {
+    background-color: var(--branco);
+    padding: 1%;
+    margin: auto;
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px;
+    /*sombra na direção direita e baixo, com um desfoque de 10px. */
+}
+
+aside {
+    background-color: var(--branco);
+    padding: 1%;
+    margin: auto;
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px;
+    /*sombra na direção direita e baixo, com um desfoque de 10px. */
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    /* Mais ou menos 16px */
+    letter-spacing: 2px;
+}
+
+footer {
+    background-color: var(--violt);
+    color: var(--branco);
+    text-align: center;
+    padding: 1%;
+    text-shadow: 1px 2px 2px var(--preto);
+}
+
+/*Configurações de titulos*/
+h1 {
+    color: var(--indig);
+    font-size: 2em;
+    /* Mais ou menos 32px */
+    margin-top: 3%;
+}
+
+h2 {
+    color: var(--indig);
+    font-size: 1.5em;
+}
+
+h3 {
+    font-family: 'Agbalumo', cursive;
+    text-shadow: 1px 2px 2px var(--preto);
+    font-size: 1.7em;
+}
+
+h4 {
+    text-shadow: 1px 2px 2px var(--preto);
+    font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+/*configurações de imagens*/
+img {
+    width: 100%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    border-radius: 15px;
+}
+
+/*Configurações de parágrafos*/
+p {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    line-height: 1.5em;
+}
+
+/*divs*/
+.separador {
+    margin-top: 15%;
+}
+
+.separador-conteudo {
+    margin-top: 2%;
+}
+
+/*configuracao dispositivos móveis*/
+@media (min-width: 360px) and (max-width: 800px) {
+    main {
+        width: 90%;
+    }
+
+    p {
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+}
+
+/*configuracao divs para dispositivos móveis*/
+@media (min-width: 360px) and (max-width: 800px) {
+    .separador {
+        margin-top: 20%;
+    }
+
+    .separador-conteudo {
+        margin-top: 5%;
+    }
+}
+
+/*Configurações para o grid de conteúdo*/
+.grid-conteudo {
+    background-color: var(--branco);
+    padding-top: 160px;
+}
+
+.grid {
+    display: grid;
+    max-width: 1024px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    margin: auto;
+    gap: 10px;
+}
+
+.grid div {
+    background-color: var(--branco);
+    text-align: center;
+    padding: 2;
+}
+/*Trabalhando com flexbox para o grid de equipe*/
+.grid-equipe {
+    background-color: var(--branco);
+    padding-top: 130px;
+}
+.grid-equipe-sb {
+    display: flex;
+    justify-content: center;/*Centraliza os itens horizontalmente dentro do contêiner. */
+    align-items: center;/*Centra os itens verticalmente dentro do contêiner. */
+    flex-wrap: wrap; /*Alinha os itens em várias linhas, se necessário. */
+    margin: auto;
+    gap: 8px;
+    padding: auto;
+}
+/*Configurações para o grid de conteúdo em dispositivos móveis*/
+@media (min-width: 360px) and (max-width: 800px) {
+    .grid-conteudo {
+        background-color: var(--branco);
+        padding-top: 70px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        max-width: 1024px;
+        margin: auto;
+        gap: 1px;
+    }
+
+    .grid div {
+        background-color: var(--branco);
+        text-align: center;
+        padding: 1%;
+    }
+}
+
+/*configuracoes poara botões*/
+button {
+    background-color: var(--verde);
+    color: var(--branco);
+    padding: 1%;
+    font-size: 1.3em;
+    border-radius: 15px;
+    cursor: pointer;
+    display: block;
+    /*item fica em uma linha separada, ocupando toda a largura disponível. */
+    margin: auto;
+    transition: 0.4s ease;
+}
+.btn{
+    display: block;
+    width: 160px;
+    background-color: var(--indig);
+    padding: 10px 25px 10px 25px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    margin: auto;
+    text-align: center;
+}
+
+button:hover {
+    background-color: var(--verde2);
+    text-shadow: 1px 1px var(--preto);
+}
+ul {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    line-height: 1.5em;
+    list-style-type: square;
+}
+.video {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 1%;
+    background-color: rgba(255, 186, 232, 0.5);
+    border-radius: 10px;
+}
+@media (min-width: 360px) and (max-width: 800px) {
+    div.video {
+        position: relative;
+        padding-bottom: 50%;
+        background-color: var(--violt);
+        border-radius: 10px;
+    }
+    div.video > iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #whats {
+        text-align: center;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        width: 50px;
+        height: 50px;
+    }   
+}
+/*Whatsapp*/
+#whats {
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    color: var(--indig);
+    text-shadow: 1px 1px var(--branco);
+}
