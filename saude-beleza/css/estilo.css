@@ -22,7 +22,7 @@
 }
 
 header {
-    background-color: var(--violt);
+    background: linear-gradient(var(--violt), var(--orchd), var(--orchd));
     color: var(--branco);
     padding: 1%;
     position: fixed;
@@ -70,12 +70,11 @@ aside {
     padding: 1%;
     margin: auto;
     width: 90%;
-    border-radius: 15px;
-    box-shadow: 1px 1px 5px;
-    /*sombra na direção direita e baixo, com um desfoque de 10px. */
+
 }
 
 html {
+    background: linear-gradient( var(--orchd), var(--orchd),var(--violt));
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     /* Mais ou menos 16px */
@@ -129,7 +128,12 @@ img {
     width: 100%;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
-    border-radius: 15px;
+}
+.img-site{
+    width: 100%;
+    padding-top: 2%;
+    background: radial-gradient(var(--orchd), var(--branco), var(--branco));
+    border-radius: 100%;
 }
 
 /*Configurações de parágrafos*/
@@ -138,7 +142,19 @@ p {
     padding-bottom: 1%;
     line-height: 1.5em;
 }
-
+p.especialistas {
+    text-align: center;
+    font-style: italic;
+    color: var(--indig);
+    font-weight:bold;
+}
+p#servicos {
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--indig);
+    font-weight: bold;
+    text-decoration: underline;
+}
 /*divs*/
 .separador {
     margin-top: 15%;
@@ -200,8 +216,7 @@ p {
     justify-content: center;/*Centraliza os itens horizontalmente dentro do contêiner. */
     flex-wrap: wrap; /*Alinha os itens em várias linhas, se necessário. */
     margin: auto;
-    gap: 8px;
-    padding: auto;
+    gap: 20px;
 }
 /*Configurações para o grid de conteúdo em dispositivos móveis*/
 @media (min-width: 360px) and (max-width: 800px) {
@@ -301,4 +316,9 @@ ul {
     z-index: 2;
     color: var(--indig);
     text-shadow: 1px 1px var(--branco);
+}
+.redes-sociais {
+    width: 40px;
+    height: 40px;
+    padding: 0.5%;
 }

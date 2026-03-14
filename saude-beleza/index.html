@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/sb-logo.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/estilo.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Saúde e Beleza</title>
 </head>
 
@@ -21,7 +22,7 @@
         <a href="Cursos.html">Cursos</a>
       </ul>
     </nav>-->
-    <!--Botão de contato via whats-->
+        <!--Botão de contato via whats-->
         <div id="whats">
             <a href="https://api.whatsapp.com/send?phone=5511999999999&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20pedido!"
                 target="_blank">
@@ -29,17 +30,19 @@
             </a>
             <br>
         </div>
-        
+
     </header>
     <!-- Inserir topo complementar -->
-     <br>
+    <br>
     <section class="grid-conteudo">
         <div class="grid">
-            <div><br><img src="img/topo-site.webp" alt="Enfermeira Saúde e Beleza"></div>
+            <div><br><img class="img-site" src="img/topo-site.webp" alt="Enfermeira Saúde e Beleza"></div>
             <div>
-                <h2>Agende sua avaliação</h2>
+                <h1>Agende sua avaliação</h1>
                 <br>
-                <h1>Seja a sua prioridade</h1>
+                <h2>Seja a sua prioridade, cuide do seu bem-estar</h2>
+                
+                <br>
                 <p>
                     O auto cuidado é essencial para o bem-estar e a saúde. Agende sua avaliação conosco e descubra como
                     podemos ajudar você a alcançar seus objetivos de beleza e saúde. Nossa equipe de especialistas está
@@ -71,10 +74,9 @@
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <br><br>
-                <a class="btn" href="#">Saiba mais</a>
+
             </div>
-            <br>
+            <br><a class="btn" href="#">Saiba mais</a><br>
             <h2>Nossos Serviços</h2>
             <br>
             <p>
@@ -108,7 +110,23 @@
                     de beleza e saúde
                     personalizada, entendendo o que é essencial para alcançar um equilíbrio no dia a dia.
                 </li><br>
-            </ul>
+            </ul><br>
+            <!-- Seção para exibir os precos dos servicos -->
+            <p id="servicos">CLIQUE EM AGENDAR E GANHE UMA SESSÃO GRATUITA</p>
+            <section class="grid-equipe">
+                <div class="grid-equipe-sb">
+                    <div><img class="" src="img/facial.webp" alt="Tratamento Facial">
+                        <a href="#" class="btn">Agendar</a><br>
+                    </div>
+                    <div><img class="" src="img/cabelo.webp" alt="Tratamento Cabelo">
+                        <a class="btn" href="#">Agendar</a>
+                    </div>
+                    <div><img class="" src="img/relaxamento.webp" alt="Relaxamento">
+                        <a class="btn" href="#">Agendar</a>
+                    </div>
+                </div>
+
+            </section>
             </p>
 
             <h2>Nossa Missão</h2>
@@ -135,9 +153,18 @@
         <!-- Artigo ou seção principal do conteúdo, onde ficam as informações mais importantes. -->
         <section class="grid-equipe">
             <div class="grid-equipe-sb">
-                <div><img src="img/equipe1.webp" alt="Funcionário 1"><a class="btn" href="#">Dra. Aline</a></div>
-                <div><img src="img/equipe2.webp" alt="Funcionário 2"><a class="btn" href="#">Dra. Maria</a></div>
-                <div><img src="img/equipe3.webp" alt="Funcionário 3"><a class="btn" href="#">Dr. Theo</a></div>
+                <div><img class="img-site" src="img/equipe1.webp" alt="Dra. Aline">
+                    <a href="#" class="btn">Dra. Aline</a><br>
+                    <p class="especialistas">Especialista em Estética Facial e Corporal</p>
+                </div>
+                <div><img class="img-site" src="img/equipe2.webp" alt="Dra. Maria">
+                    <a class="btn" href="#">Dra. Maria</a>
+                    <p class="especialistas">Especialista em Cuidados Capilares</p>
+                </div>
+                <div><img class="img-site" src="img/equipe3.webp" alt="Dr. Theo">
+                    <a class="btn" href="#">Dr. Theo</a>
+                    <p class="especialistas">Especialista em Bem-estar e Relaxamento</p>
+                </div>
             </div>
 
         </section>
@@ -151,9 +178,18 @@
         <p>Contato: wagner.inst@gmail.com</p>
         <p>Telefone: (11) 1234-5678</p>
         <p>Endereço: Av Paulista, 123 - São Paulo, SP</p>
+        <br><h4>Redes Sociais</h4>
+        <a href="https://www.instagram.com/" target="_blank">
+        <img class="redes-sociais" src="img/Instagram.webp" alt="Logo Instagram"></a>
+        <a href="https://www.youtube.com" target="_blank">
+        <img class="redes-sociais" src="img/Youtube.webp" alt="Logo Youtube"></a>
+        <a href="https://www.tiktok.com" target="_blank">
+        <img class="redes-sociais" src="img/TikTok.webp" alt="Logo TikTok"></a>
+        <br>
         <h6>Desenvolvido por Tectreinamentos LTDA.</h6>
     </footer>
     <!-- Rodapé da página, onde ficam as informações de contato, direitos autorais, etc. -->
 </body>
+<script src="script.js"></script>
 
 </html>
