@@ -198,7 +198,6 @@ p {
 .grid-equipe-sb {
     display: flex;
     justify-content: center;/*Centraliza os itens horizontalmente dentro do contêiner. */
-    align-items: center;/*Centra os itens verticalmente dentro do contêiner. */
     flex-wrap: wrap; /*Alinha os itens em várias linhas, se necessário. */
     margin: auto;
     gap: 8px;
